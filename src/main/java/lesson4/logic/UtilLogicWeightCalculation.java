@@ -66,6 +66,19 @@ public class UtilLogicWeightCalculation {
 		
 		
 		
+		if(lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForString.getWeight() &&
+				lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForColumn.getWeight() &&
+				lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForSecondDiagonal.getWeight())
+			
+			return lessesWeightForFirstDiagonal;
+		
+		if(lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForString.getWeight() &&
+				lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForColumn.getWeight() &&
+				lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForFirstDiagonal.getWeight())
+			
+			return lessesWeightForSecondDiagonal;
+		
+		
 		if(lessesWeightForString.getWeight()<=lessesWeightForColumn.getWeight() && 
 				lessesWeightForString.getWeight()<=lessesWeightForFirstDiagonal.getWeight() && 
 				lessesWeightForString.getWeight()<=lessesWeightForSecondDiagonal.getWeight())
@@ -78,17 +91,7 @@ public class UtilLogicWeightCalculation {
 			
 			return lessesWeightForColumn;
 		
-		if(lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForString.getWeight() &&
-				lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForColumn.getWeight() &&
-				lessesWeightForFirstDiagonal.getWeight()<=lessesWeightForSecondDiagonal.getWeight())
-			
-			return lessesWeightForFirstDiagonal;
 		
-		if(lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForString.getWeight() &&
-				lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForColumn.getWeight() &&
-				lessesWeightForSecondDiagonal.getWeight()<=lessesWeightForFirstDiagonal.getWeight())
-			
-			return lessesWeightForSecondDiagonal;
 		
 		else
 			
